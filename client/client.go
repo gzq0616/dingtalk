@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/CatchZeng/dingtalk/message"
-	"github.com/CatchZeng/dingtalk/security"
+	"github.com/gzq0616/dingtalk/message"
+	"github.com/gzq0616/dingtalk/security"
 )
 
 // DingTalk dingtalk client

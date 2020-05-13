@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"github.com/CatchZeng/dingtalk/client"
-	"github.com/CatchZeng/dingtalk/message"
 	"github.com/CatchZeng/gutils/log"
+	"github.com/gzq0616/dingtalk/client"
+	"github.com/gzq0616/dingtalk/message"
 	"github.com/spf13/cobra"
 )
 

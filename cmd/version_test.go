@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/CatchZeng/dingtalk/version"
+	"github.com/gzq0616/dingtalk/version"
 	"github.com/spf13/cobra"
 )
 

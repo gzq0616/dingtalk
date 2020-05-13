@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/CatchZeng/dingtalk/cmd"
+	"github.com/gzq0616/dingtalk/cmd"
 )
 
 func main() {
