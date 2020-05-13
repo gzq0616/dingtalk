@@ -20,7 +20,10 @@ var dingTalkURL url.URL = url.URL{
 	Path:   "robot/send",
 }
 
-var timestamp = strconv.FormatInt(time.Now().Unix()*1000, 10)
+//var timestamp = strconv.FormatInt(time.Now().Unix()*1000, 10)
+func GetTimestamp() string {
+	return strconv.FormatInt(time.Now().Unix()*1000, 10)
+}
 
 // GetDingTalkURL get DingTalk URL with accessToken & secret
 // If no signature is set, the secret is set to ""
@@ -34,6 +37,8 @@ func GetDingTalkURL(accessToken string, secret string) (string, error) {
 		dtu.RawQuery = value.Encode()
 		return dtu.String(), nil
 	}
+
+	timestamp := GetTimestamp()
 
 	sign, err := sign(timestamp, secret)
 	if err != nil {
